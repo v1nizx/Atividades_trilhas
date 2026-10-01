@@ -1,0 +1,15 @@
+{
+  "name": "atividade-final-javascript",
+  "version": "1.0.0",
+  "description": "Atividade final de JavaScript: cadastro, avaliação e atualização de pontuação da equipe gamer.",
+  "main": "menu.js",
+  "scripts": {
+    "start": "node menu.js",
+    "menu": "node menu.js",
+    "teste": "node teste.js",
+    "cadastro": "node entrada-de-dados.js",
+    "avaliar": "node tomada-decisoes.js",
+    "atualizar": "node gamerTeamManager.js"
+  },
+  "license": "ISC"
+}
