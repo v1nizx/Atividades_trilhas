@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #fff;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+
+.container {
+  background: #0b2e4e;
+  border-top: 6px solid #00a99d;
+  padding: 16px;
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+  align-content: center;
+}
+
+
+.quadro {
+  background: #10395e;
+  border: 1px dashed rgba(255, 255, 255, 0.18);
+  border-radius: 10px;
+  flex: 1 1 calc(25% - 16px);
+  min-width: 200px;
+  max-width: calc(25% - 12px);
+  height: 38vh;
+  min-height: 260px;
+  padding: 14px;
+  display: flex;
+  gap: 8px;
+}
+
+.item {
+  width: 46px;
+  height: 46px;
+  border-radius: 8px;
+  flex-shrink: 0;
+}
+
+.item:nth-child(1) { background: #88d1f7; }
+.item:nth-child(2) { background: #4aa3e0; }
+.item:nth-child(3) { background: #2b7ac0; }
+.item:nth-child(4) { background: #205d94; }
+
+
+.q1 {
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+
+.q2 {
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+
+.q3 {
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.q4 {
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.q5 {
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+
+.q6 {
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.q6 .item:nth-child(2) {
+  flex-grow: 1;
+}
+
+
+.q7 {
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.q7 .item:nth-child(3) {
+  background: #ffffff;
+}
+
+
+.q8 {
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+.q8 .item {
+  width: calc(50% - 8px);
+  height: calc(19vh - 12px);
+  min-height: 80px;
+  flex: 1 1 calc(50% - 8px);
+  max-width: calc(50% - 4px);
+}
+
+
+@media (max-width: 700px) {
+  .quadro {
+    flex: 1 1 calc(50% - 12px);
+    max-width: calc(50% - 6px);
+  }
+}
+@media (max-width: 420px) {
+  .quadro {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+}
